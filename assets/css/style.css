@@ -25,7 +25,7 @@ header{
 
 .container{
     width: 100vw;
-    max-width: 1200px;
+    max-width: 1224px;
     margin: auto;
 }
 
@@ -65,7 +65,7 @@ header{
     height: calc(100vh - 100px);
 }
 .blackout{
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 100%;
     display: flex;
@@ -77,6 +77,7 @@ header{
     width: 500px;
     height: 300px;
     background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
 }
 .big-logo{
     width: 200px;
@@ -84,20 +85,26 @@ header{
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    background-color: gray;
+    background-color: rgb(219, 219, 219);
     border-radius: 10px;
 }
 .title{
     margin-top: 25px;
     text-align: center;
     font-size: 38px;
-    color: gray;
+    color: rgb(206, 206, 206);
 }
 
 .services{
     height: 600px;
     background-image: url(../images/Cortando.jpg);
     background-size: cover;
+}
+.services2{
+    height: 600px;
+    background-image: url(../images/salao.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .lighten{
@@ -108,32 +115,17 @@ header{
     justify-content: space-between;
 }
 
-.slider{
+.area{
     height: 400px;
-    margin-top: 80px;
     background-color: rgba(0, 0, 0, 0.8);
-    overflow-x: hidden;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .slider-area{
     display: flex;
-    width:3600px;
-}
-
-.box-buttons{
-    height: 50px;
-    display: flex;
-    justify-content: center;
-}
-.buttons{
-    width: 100px;
-    height: 5px;
-    margin: 3px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 5px;
-}
-.buttons:hover{
-    cursor: pointer;
+    width:600px;
 }
 
 .slide{
@@ -142,34 +134,109 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 0px 50px;
 }
-.image{
+.image1{
     width: 350px;
     height: 300px;
-    background-color: white;
+    background-image: url(../images/cabelo.jpg);
+    background-size: cover;
+    background-position: top;
     border-radius: 15px;
 }
-.content{
+.content1{
     width: 600px;
     height: 300px;
-    background-color: rgb(100, 100, 100);
+    color: white;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 25px;
+}
+.text{
+    width: 400px;
+    text-align: center;
+}
+
+.image2{
+    width: 350px;
+    height: 300px;
+    background-image: url(../images/barba.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+.content2{
+    width: 600px;
+    height: 300px;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 25px;
 }
 
 .galery{
     background-color: black;
+    height: 600px;
+    display: flex;
+    align-items: center;
 }
 
 .photo-area{
     height: 600px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
 }
 
-.photo{
-    background-color: white;
-    border: 3px solid gray;
-    margin: 25px 2px;
+.slider{
+    display: flex;
+    align-items: center;
+    width: 2448px;
+    height: 600px;
+    transition: 0.5s linear;
+}
+
+.photo1{
+    background-image: url(../images/Tesoura.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid gray;
+    width: 300px;
+    height: 500px;
+    margin: 25px 3px;
+}
+.photo2{
+    background-image: url(../images/navalha.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid gray;
+    width: 300px;
+    height: 500px;
+    margin: 25px 3px;
+}
+.photo3{
+    background-image: url(../images/rolete.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid gray;
+    width: 300px;
+    height: 500px;
+    margin: 25px 3px;
+}
+.photo4{
+    background-image: url(../images/tesoura-preta.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid gray;
+    width: 300px;
+    height: 500px;
+    margin: 25px 3px;
 }
 
 .location{
